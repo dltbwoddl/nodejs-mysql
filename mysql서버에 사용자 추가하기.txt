@@ -1,0 +1,9 @@
+SELECT Host, User FROM mysql.User=접근 가능한 user보기(host는 해당 사용자의 주소).
+
+CREATE USER 'newuser'@'주소(%는 어디에서든 접속하던 이라는 뜻이다.)' IDENTIFIED BY '비밀번호111111';
+
+권한 주기
+GRANT ALL PRIVILEGES ON datebasename.* TO 'newuser'@'주소'
+
+위에 한 것 반영하기.
+FLUSH PRIVILEGES;
